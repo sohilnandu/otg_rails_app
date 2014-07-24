@@ -11,12 +11,12 @@ class CreateEventRegistrants < ActiveRecord::Migration
       t.string :DonorCategory
       t.string :NextAskAmount
       t.string :TotalIdentifiedAssets
-      t.integer :CurrentMajor1kDonor
-      t.integer :MajorDonorWith1MMinAssets
-      t.integer :MajorUnderPerformer
+      t.boolean :CurrentMajor1kDonor
+      t.boolean :MajorDonorWith1MMinAssets
+      t.boolean :MajorUnderPerformer
       t.integer :MajorUnderPerformingByAmount
-      t.integer :AnnualDonorWith1MMinAssets
-      t.integer :AnnualUnderPerformer
+      t.boolean :AnnualDonorWith1MMinAssets
+      t.boolean :AnnualUnderPerformer
       t.integer :AnnualUnderPerformingByAmount
 
       t.timestamps
