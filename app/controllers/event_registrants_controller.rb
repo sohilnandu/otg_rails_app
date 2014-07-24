@@ -66,6 +66,7 @@ class EventRegistrantsController < ApplicationController
     er = EventRegistrant.find(params[:id])
 
     er.checked_in = 1
+    er.checked_in_time = DateTime.now
     er.save()
 
     redirect_to :controller => :event_registrants
