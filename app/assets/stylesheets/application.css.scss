@@ -14,14 +14,41 @@
  *= require_self
  */
 
+.navbar-header {
+    font-size: 2.0em;
+    color: #fff;
+}
+
+.navbar-header a:visited{
+    color: #fff;
+}
+
+.navbar {
+    background-color:#d9230f;
+
+}
+
+.navbar ul li a{
+    color: #fff;
+}
+
+.navbar ul li a:visited{
+    color: #fff;
+}
+
+
 h1 {
     font-weight: bold;
+    color:#d9230f;
 }
 
 th {
     font-size: 2.5em;
+    color:#222;
 }
 
 td {
     font-size: 2.0em;
+    color: #555;
 }
+
