@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Importid:</strong>
+  <%= @event_registrant.ImportID %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @event_registrant.FirstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @event_registrant.LastName %>
+</p>
+
+<p>
+  <strong>Addr1:</strong>
+  <%= @event_registrant.Addr1 %>
+</p>
+
+<p>
+  <strong>Addr2:</strong>
+  <%= @event_registrant.Addr2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @event_registrant.City %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @event_registrant.State %>
+</p>
+
+<p>
+  <strong>Donorcategory:</strong>
+  <%= @event_registrant.DonorCategory %>
+</p>
+
+<p>
+  <strong>Nextaskamount:</strong>
+  <%= @event_registrant.NextAskAmount %>
+</p>
+
+<p>
+  <strong>Totalidentifiedassets:</strong>
+  <%= @event_registrant.TotalIdentifiedAssets %>
+</p>
+
+<p>
+  <strong>Currentmajor1kdonor:</strong>
+  <%= @event_registrant.CurrentMajor1kDonor %>
+</p>
+
+<p>
+  <strong>Majordonorwith1mminassets:</strong>
+  <%= @event_registrant.MajorDonorWith1MMinAssets %>
+</p>
+
+<p>
+  <strong>Majorunderperformer:</strong>
+  <%= @event_registrant.MajorUnderPerformer %>
+</p>
+
+<p>
+  <strong>Majorunderperformingbyamount:</strong>
+  <%= @event_registrant.MajorUnderPerformingByAmount %>
+</p>
+
+<p>
+  <strong>Annualdonorwith1mminassets:</strong>
+  <%= @event_registrant.AnnualDonorWith1MMinAssets %>
+</p>
+
+<p>
+  <strong>Annualunderperformer:</strong>
+  <%= @event_registrant.AnnualUnderPerformer %>
+</p>
+
+<p>
+  <strong>Annualunderperformingbyamount:</strong>
+  <%= @event_registrant.AnnualUnderPerformingByAmount %>
+</p>
+
+<%= link_to 'Edit', edit_event_registrant_path(@event_registrant) %> |
+<%= link_to 'Back', event_registrants_path %>

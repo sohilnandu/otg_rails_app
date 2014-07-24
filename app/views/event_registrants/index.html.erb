@@ -1,0 +1,57 @@
+<h1>Listing event_registrants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Importid</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Addr1</th>
+      <th>Addr2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Donorcategory</th>
+      <th>Nextaskamount</th>
+      <th>Totalidentifiedassets</th>
+      <th>Currentmajor1kdonor</th>
+      <th>Majordonorwith1mminassets</th>
+      <th>Majorunderperformer</th>
+      <th>Majorunderperformingbyamount</th>
+      <th>Annualdonorwith1mminassets</th>
+      <th>Annualunderperformer</th>
+      <th>Annualunderperformingbyamount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @event_registrants.each do |event_registrant| %>
+      <tr>
+        <td><%= event_registrant.ImportID %></td>
+        <td><%= event_registrant.FirstName %></td>
+        <td><%= event_registrant.LastName %></td>
+        <td><%= event_registrant.Addr1 %></td>
+        <td><%= event_registrant.Addr2 %></td>
+        <td><%= event_registrant.City %></td>
+        <td><%= event_registrant.State %></td>
+        <td><%= event_registrant.DonorCategory %></td>
+        <td><%= event_registrant.NextAskAmount %></td>
+        <td><%= event_registrant.TotalIdentifiedAssets %></td>
+        <td><%= event_registrant.CurrentMajor1kDonor %></td>
+        <td><%= event_registrant.MajorDonorWith1MMinAssets %></td>
+        <td><%= event_registrant.MajorUnderPerformer %></td>
+        <td><%= event_registrant.MajorUnderPerformingByAmount %></td>
+        <td><%= event_registrant.AnnualDonorWith1MMinAssets %></td>
+        <td><%= event_registrant.AnnualUnderPerformer %></td>
+        <td><%= event_registrant.AnnualUnderPerformingByAmount %></td>
+        <td><%= link_to 'Show', event_registrant %></td>
+        <td><%= link_to 'Edit', edit_event_registrant_path(event_registrant) %></td>
+        <td><%= link_to 'Destroy', event_registrant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Event registrant', new_event_registrant_path %>
