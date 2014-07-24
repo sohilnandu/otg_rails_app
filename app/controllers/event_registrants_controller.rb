@@ -68,7 +68,7 @@ class EventRegistrantsController < ApplicationController
     er.checked_in = 1
     er.save()
 
-    puts 'checked in'
+    redirect_to :controller => :event_registrants
   end
 
   private
