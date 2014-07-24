@@ -21,7 +21,9 @@
         <td><%= event_registrant.State %></td>
         <td>
           <% if event_registrant.checked_in %>
-            <span class="glyphicon glyphicon-hand-right"></span>
+            <span class="glyphicon glyphicon-heart-empty"></span>
+          <% else %>
+            <span class="glyphicon glyphicon-fire"></span>
           <% end %>
         </td>
         <td><%= link_to 'Edit', edit_event_registrant_path(event_registrant) %></td>
