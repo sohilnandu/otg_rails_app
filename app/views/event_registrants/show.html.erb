@@ -52,17 +52,29 @@
 
 <p>
   <strong>Current Major 1k Donor:</strong>
-  <%= @event_registrant.CurrentMajor1kDonor %>
+  <% if @event_registrant.CurrentMajor1kDonor %>
+      Yes
+  <% else %>
+      No
+  <% end %>
 </p>
 
 <p>
   <strong>Major Donor With 1m Min Assets:</strong>
-  <%= @event_registrant.MajorDonorWith1MMinAssets %>
+  <% if @event_registrant.MajorDonorWith1MMinAssets %>
+      Yes
+  <% else %>
+      No
+  <% end %>
 </p>
 
 <p>
   <strong>Major Under Performer:</strong>
-  <%= @event_registrant.MajorUnderPerformer %>
+  <% if @event_registrant.MajorUnderPerformer %>
+      Yes
+  <% else %>
+      No
+  <% end %>
 </p>
 
 <p>
@@ -72,12 +84,20 @@
 
 <p>
   <strong>Annual Donor With 1m Min Assets:</strong>
-  <%= @event_registrant.AnnualDonorWith1MMinAssets %>
+  <% if @event_registrant.AnnualDonorWith1MMinAssets %>
+      Yes
+  <% else %>
+      No
+  <% end %>
 </p>
 
 <p>
   <strong>Annual Under Performer:</strong>
-  <%= @event_registrant.AnnualUnderPerformer %>
+  <% if @event_registrant.AnnualUnderPerformer %>
+      Yes
+  <% else %>
+      No
+  <% end %>
 </p>
 
 <p>
