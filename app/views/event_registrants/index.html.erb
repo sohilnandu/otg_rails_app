@@ -7,6 +7,7 @@
       <th>Address</th>
       <th>City</th>
       <th>State</th>
+      <th>Checked In</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,12 +15,15 @@
   <tbody>
     <% @event_registrants.each do |event_registrant| %>
       <tr>
-        <td><%= event_registrant.FirstName %> <%= event_registrant.LastName %></td>
+        <td><%= link_to event_registrant.FirstName + " " + event_registrant.LastName, event_registrant %></td>
         <td><%= event_registrant.Addr1 %></td>
         <td><%= event_registrant.City %></td>
         <td><%= event_registrant.State %></td>
-        <td><%= event_registrant.checked_in %> </td>
-        <td><%= link_to 'Show', event_registrant %></td>
+        <td>
+          <% if event_registrant.checked_in %>
+            <span class="glyphicon glyphicon-hand-right"></span>
+          <% end %>
+        </td>
         <td><%= link_to 'Edit', edit_event_registrant_path(event_registrant) %></td>
         <td><%= link_to 'Delete', event_registrant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
