@@ -27,13 +27,9 @@
                 <%= link_to('Check In', controller: "event_registrants", action: "check_in_registrant", id: event_registrant.id, :remote => true ) %>
             <% end %>
           </td>
-          <td><%= link_to 'Edit', edit_event_registrant_path(event_registrant) %></td>
-          <td><%= link_to 'Delete', event_registrant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
 </div>
 <br>
-
-<%= link_to 'New Registrant', new_event_registrant_path %>
