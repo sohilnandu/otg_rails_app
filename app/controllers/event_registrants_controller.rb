@@ -61,6 +61,16 @@ class EventRegistrantsController < ApplicationController
     end
   end
 
+  def check_in_registrant
+    puts @id
+    er = EventRegistrant.find(params[:id])
+
+    er.checked_in = 1
+    er.save()
+
+    puts 'checked in'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_event_registrant

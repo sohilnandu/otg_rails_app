@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724182259) do
+ActiveRecord::Schema.define(version: 20140724192855) do
 
   create_table "event_registrants", force: true do |t|
     t.integer  "ImportID"
@@ -24,16 +24,17 @@ ActiveRecord::Schema.define(version: 20140724182259) do
     t.string   "DonorCategory"
     t.string   "NextAskAmount"
     t.string   "TotalIdentifiedAssets"
-    t.boolean  "CurrentMajor1kDonor"
-    t.boolean  "MajorDonorWith1MMinAssets"
-    t.boolean  "MajorUnderPerformer"
+    t.integer  "CurrentMajor1kDonor"
+    t.integer  "MajorDonorWith1MMinAssets"
+    t.integer  "MajorUnderPerformer"
     t.integer  "MajorUnderPerformingByAmount"
-    t.boolean  "AnnualDonorWith1MMinAssets"
-    t.boolean  "AnnualUnderPerformer"
+    t.integer  "AnnualDonorWith1MMinAssets"
+    t.integer  "AnnualUnderPerformer"
     t.integer  "AnnualUnderPerformingByAmount"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "checked_in"
+    t.datetime "checked_in_time"
   end
 
 end

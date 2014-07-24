@@ -24,7 +24,7 @@
             <% if event_registrant.checked_in %>
               <span class="glyphicon glyphicon-heart-empty"></span>
             <% else %>
-              <span class="glyphicon glyphicon-fire"></span>
+                <%= link_to('Check In', controller: "event_registrants", action: "check_in_registrant", id: event_registrant.id, :remote => true ) %>
             <% end %>
           </td>
           <td><%= link_to 'Edit', edit_event_registrant_path(event_registrant) %></td>
