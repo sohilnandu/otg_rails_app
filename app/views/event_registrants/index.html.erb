@@ -1,38 +1,39 @@
 <h1>Registered Attendees</h1>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Checked In</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @event_registrants.each do |event_registrant| %>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
       <tr>
-        <td><%= link_to event_registrant.FirstName + " " + event_registrant.LastName, event_registrant %></td>
-        <td><%= event_registrant.Addr1 %></td>
-        <td><%= event_registrant.City %></td>
-        <td><%= event_registrant.State %></td>
-        <td>
-          <% if event_registrant.checked_in %>
-            <span class="glyphicon glyphicon-heart-empty"></span>
-          <% else %>
-            <span class="glyphicon glyphicon-fire"></span>
-          <% end %>
-        </td>
-        <td><%= link_to 'Edit', edit_event_registrant_path(event_registrant) %></td>
-        <td><%= link_to 'Delete', event_registrant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Checked In</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
+    <tbody>
+      <% @event_registrants.each do |event_registrant| %>
+        <tr>
+          <td><%= link_to event_registrant.FirstName + " " + event_registrant.LastName, event_registrant %></td>
+          <td><%= event_registrant.Addr1 %></td>
+          <td><%= event_registrant.City %></td>
+          <td><%= event_registrant.State %></td>
+          <td>
+            <% if event_registrant.checked_in %>
+              <span class="glyphicon glyphicon-heart-empty"></span>
+            <% else %>
+              <span class="glyphicon glyphicon-fire"></span>
+            <% end %>
+          </td>
+          <td><%= link_to 'Edit', edit_event_registrant_path(event_registrant) %></td>
+          <td><%= link_to 'Delete', event_registrant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 <br>
 
 <%= link_to 'New Registrant', new_event_registrant_path %>
