@@ -24,7 +24,7 @@
             <% if event_registrant.checked_in %>
               <span class="glyphicon glyphicon-ok"></span>
             <% else %>
-                <%= link_to 'Check In', {controller: "event_registrants", action: "check_in_registrant", id: event_registrant.id}, class: "checked_in" %>
+                <%= link_to 'Check in!', {controller: "event_registrants", action: "check_in_registrant", id: event_registrant.id}, class: "checked_in" %>
             <% end %>
           </td>
         </tr>
