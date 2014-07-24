@@ -22,7 +22,7 @@
           <td><%= event_registrant.State %></td>
           <td>
             <% if event_registrant.checked_in %>
-              <span class="glyphicon glyphicon-heart-empty"></span>
+              <span class="glyphicon glyphicon-ok"></span>
             <% else %>
                 <%= link_to('Check In', controller: "event_registrants", action: "check_in_registrant", id: event_registrant.id ) %>
             <% end %>
