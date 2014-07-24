@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724175400) do
+ActiveRecord::Schema.define(version: 20140724182259) do
 
   create_table "event_registrants", force: true do |t|
     t.integer  "ImportID"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140724175400) do
     t.integer  "AnnualUnderPerformingByAmount"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "checked_in"
   end
 
 end
