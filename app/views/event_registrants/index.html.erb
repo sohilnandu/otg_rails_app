@@ -24,7 +24,7 @@
             <% if event_registrant.checked_in %>
               <span class="glyphicon glyphicon-ok"></span>
             <% else %>
-                <%= link_to 'Check in!', {controller: "event_registrants", action: "check_in_registrant", id: event_registrant.id}, class: "btn btn-success checked_in" %>
+                <%= link_to 'Check in!', {controller: "event_registrants", action: "check_in_registrant", id: event_registrant.id, import_id: event_registrant.ImportID}, class: "btn btn-success checked_in" %>
             <% end %>
           </td>
         </tr>

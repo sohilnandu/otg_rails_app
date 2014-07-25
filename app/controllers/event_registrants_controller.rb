@@ -62,8 +62,7 @@ class EventRegistrantsController < ApplicationController
   end
 
   def check_in_registrant
-    puts @id
-    er = EventRegistrant.find(params[:id])
+    er = EventRegistrant.find_by ImportID: params[:import_id]
 
     er.checked_in = 1
     er.checked_in_time = DateTime.now
