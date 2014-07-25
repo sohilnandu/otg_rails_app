@@ -40,7 +40,7 @@
 }
 
 .navbar ul li a:hover{
-    color: #888;
+    color: #fff;
 }
 
 
@@ -79,5 +79,12 @@ td {
 #flash_notice {
     font-size: 3em;
     font-weight: bold;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: #fff;
+}
+
+.potatocolumn {
+    width: 40%;
 }
 

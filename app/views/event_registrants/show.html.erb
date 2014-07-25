@@ -1,108 +1,189 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Import Id:</strong>
-  <%= @event_registrant.ImportID %>
-</p>
+<div class="table-responsive">
+  <table class="table-hover table-bordered table-condensed table">
+    <tr>
+      <th class="potatocolumn">
+        Category
+      </th>
+      <th>
+        Value
+      </th>
+    </tr>
 
-<p>
-  <strong>First Name:</strong>
-  <%= @event_registrant.FirstName %>
-</p>
+    <tr>
+      <td>
+        <strong>Import Id:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.ImportID %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Last Name:</strong>
-  <%= @event_registrant.LastName %>
-</p>
+    <tr>
+      <td>
+        <strong>First Name:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.FirstName %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Address Line 1:</strong>
-  <%= @event_registrant.Addr1 %>
-</p>
+    <tr>
+      <td>
+        <strong>Last Name:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.LastName %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Address Line 2:</strong>
-  <%= @event_registrant.Addr2 %>
-</p>
+    <tr>
+      <td>
+        <strong>Address Line 1:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.Addr1 %>
+      </td>
+    </tr>
 
-<p>
-  <strong>City:</strong>
-  <%= @event_registrant.City %>
-</p>
+    <tr>
+      <td>
+        <strong>Address Line 2:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.Addr2 %>
+      </td>
+    </tr>
 
-<p>
-  <strong>State:</strong>
-  <%= @event_registrant.State %>
-</p>
+    <tr>
+      <td>
+        <strong>City:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.City %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Donor Category:</strong>
-  <%= @event_registrant.DonorCategory %>
-</p>
+    <tr>
+      <td>
+        <strong>State:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.State %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Next Ask Amount:</strong>
-  <%= @event_registrant.NextAskAmount %>
-</p>
+    <tr>
+      <td>
+        <strong>Donor Category:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.DonorCategory %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Total Identified Assets:</strong>
-  <%= @event_registrant.TotalIdentifiedAssets %>
-</p>
+    <tr>
+      <td>
+        <strong>Next Ask Amount:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.NextAskAmount %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Current Major 1k Donor:</strong>
-  <% if @event_registrant.CurrentMajor1kDonor %>
-      Yes
-  <% else %>
-      No
-  <% end %>
-</p>
+    <tr>
+      <td>
+        <strong>Total Identified Assets:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.TotalIdentifiedAssets %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Major Donor With 1m Min Assets:</strong>
-  <% if @event_registrant.MajorDonorWith1MMinAssets %>
-      Yes
-  <% else %>
-      No
-  <% end %>
-</p>
+    <tr>
+      <td>
+        <strong>Current Major 1k Donor:</strong>
+      </td>
+      <td>
+        <% if @event_registrant.CurrentMajor1kDonor %>
+          Yes
+        <% else %>
+          No
+        <% end %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Major Under Performer:</strong>
-  <% if @event_registrant.MajorUnderPerformer %>
-      Yes
-  <% else %>
-      No
-  <% end %>
-</p>
+    <tr>
+      <td>
+        <strong>Major Donor With 1m Min Assets:</strong>
+      </td>
+      <td>
+        <% if @event_registrant.MajorDonorWith1MMinAssets %>
+            Yes
+        <% else %>
+            No
+        <% end %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Under Performing By Amount:</strong>
-  <%= @event_registrant.MajorUnderPerformingByAmount %>
-</p>
+    <tr>
+      <td>
+        <strong>Major Under Performer:</strong>
+      </td>
+      <td>
+        <% if @event_registrant.MajorUnderPerformer %>
+            Yes
+        <% else %>
+            No
+        <% end %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Annual Donor With 1m Min Assets:</strong>
-  <% if @event_registrant.AnnualDonorWith1MMinAssets %>
-      Yes
-  <% else %>
-      No
-  <% end %>
-</p>
+    <tr>
+      <td>
+        <strong>Under Performing By Amount:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.MajorUnderPerformingByAmount %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Annual Under Performer:</strong>
-  <% if @event_registrant.AnnualUnderPerformer %>
-      Yes
-  <% else %>
-      No
-  <% end %>
-</p>
+    <tr>
+      <td>
+        <strong>Annual Donor With 1m Min Assets:</strong>
+      </td>
+      <td>
+        <% if @event_registrant.AnnualDonorWith1MMinAssets %>
+            Yes
+        <% else %>
+            No
+        <% end %>
+      </td>
+    </tr>
 
-<p>
-  <strong>Annual Under Performing By Amount:</strong>
-  <%= @event_registrant.AnnualUnderPerformingByAmount %>
-</p>
+    <tr>
+      <td>
+        <strong>Annual Under Performer:</strong>
+      </td>
+      <td>
+        <% if @event_registrant.AnnualUnderPerformer %>
+            Yes
+        <% else %>
+            No
+        <% end %>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <strong>Annual Under Performing By Amount:</strong>
+      </td>
+      <td>
+        <%= @event_registrant.AnnualUnderPerformingByAmount %>
+      </td>
+    </tr>
+   </table>
+</div>
 
 <%= link_to 'Back', event_registrants_path %>
