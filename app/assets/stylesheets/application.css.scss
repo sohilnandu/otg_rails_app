@@ -15,7 +15,8 @@
  */
 
 .navbar-header {
-    font-size: 2.0em;
+    font-size: 3.0em;
+    font-family: 'Lobster', cursive;
     color: #fff;
 }
 
@@ -29,12 +30,17 @@
 }
 
 .navbar ul li a{
-    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    font-size: 2.0em;
     color: #fff;
 }
 
 .navbar ul li a:visited{
     color: #fff;
+}
+
+.navbar ul li a:hover{
+    color: #888;
 }
 
 
@@ -45,16 +51,36 @@ h1 {
 
 th {
     font-size: 2.5em;
-    color:#222;
+    color:#444;
 }
 
 td {
     font-size: 2.0em;
-    color: #555;
+    color: #888;
 }
 
+    td a {
+        color: #333;
+    }
+
+    td a:visited {
+        color: #333;
+    }
+
+    td .checked_in {
+        color: #fff;
+        font-weight: bold;
+    }
+
 .checked_in {
-    background-color:#008cba;
+    color: #fff;
+}
+
+#flash_notice {
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: #fff;
 }
 
