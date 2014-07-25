@@ -68,7 +68,8 @@ class EventRegistrantsController < ApplicationController
     er.checked_in = 1
     er.save()
 
-    redirect_to :controller => :event_registrants
+    flash[:notice] = "You have checked in!"
+    redirect_to :controller => :event_registrants 
   end
 
   private
