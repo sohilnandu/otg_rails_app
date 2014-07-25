@@ -16,7 +16,7 @@
     <tbody>
       <% @event_registrants.each do |event_registrant| %>
         <tr>
-          <td><%= link_to event_registrant.FirstName + " " + event_registrant.LastName, event_registrant %></td>
+          <td><%= link_to event_registrant.FirstName.to_s + " " + event_registrant.LastName.to_s, event_registrant %></td>
           <td><%= event_registrant.Addr1 %></td>
           <td><%= event_registrant.City %></td>
           <td><%= event_registrant.State %></td>
