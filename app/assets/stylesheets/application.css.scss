@@ -56,8 +56,21 @@ th {
 
 td {
     font-size: 2.0em;
-    color: #555;
+    color: #888;
 }
+
+    td a {
+        color: #333;
+    }
+
+    td a:visited {
+        color: #333;
+    }
+
+    td .checked_in {
+        color: #fff;
+        font-weight: bold;
+    }
 
 .checked_in {
     color: #fff;
