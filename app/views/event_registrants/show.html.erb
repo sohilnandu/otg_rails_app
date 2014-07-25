@@ -3,8 +3,19 @@
 <div class="table-responsive">
   <table class="table-hover table-bordered table-condensed table">
     <tr>
+      <th class="potatocolumn">
+        Category
+      </th>
+      <th>
+        Value
+      </th>
+    </tr>
+
+    <tr>
       <td>
         <strong>Import Id:</strong>
+      </td>
+      <td>
         <%= @event_registrant.ImportID %>
       </td>
     </tr>
@@ -12,6 +23,8 @@
     <tr>
       <td>
         <strong>First Name:</strong>
+      </td>
+      <td>
         <%= @event_registrant.FirstName %>
       </td>
     </tr>
@@ -19,6 +32,8 @@
     <tr>
       <td>
         <strong>Last Name:</strong>
+      </td>
+      <td>
         <%= @event_registrant.LastName %>
       </td>
     </tr>
@@ -26,6 +41,8 @@
     <tr>
       <td>
         <strong>Address Line 1:</strong>
+      </td>
+      <td>
         <%= @event_registrant.Addr1 %>
       </td>
     </tr>
@@ -33,6 +50,8 @@
     <tr>
       <td>
         <strong>Address Line 2:</strong>
+      </td>
+      <td>
         <%= @event_registrant.Addr2 %>
       </td>
     </tr>
@@ -40,6 +59,8 @@
     <tr>
       <td>
         <strong>City:</strong>
+      </td>
+      <td>
         <%= @event_registrant.City %>
       </td>
     </tr>
@@ -47,6 +68,8 @@
     <tr>
       <td>
         <strong>State:</strong>
+      </td>
+      <td>
         <%= @event_registrant.State %>
       </td>
     </tr>
@@ -54,6 +77,8 @@
     <tr>
       <td>
         <strong>Donor Category:</strong>
+      </td>
+      <td>
         <%= @event_registrant.DonorCategory %>
       </td>
     </tr>
@@ -61,6 +86,8 @@
     <tr>
       <td>
         <strong>Next Ask Amount:</strong>
+      </td>
+      <td>
         <%= @event_registrant.NextAskAmount %>
       </td>
     </tr>
@@ -68,6 +95,8 @@
     <tr>
       <td>
         <strong>Total Identified Assets:</strong>
+      </td>
+      <td>
         <%= @event_registrant.TotalIdentifiedAssets %>
       </td>
     </tr>
@@ -75,6 +104,8 @@
     <tr>
       <td>
         <strong>Current Major 1k Donor:</strong>
+      </td>
+      <td>
         <% if @event_registrant.CurrentMajor1kDonor %>
           Yes
         <% else %>
@@ -86,6 +117,8 @@
     <tr>
       <td>
         <strong>Major Donor With 1m Min Assets:</strong>
+      </td>
+      <td>
         <% if @event_registrant.MajorDonorWith1MMinAssets %>
             Yes
         <% else %>
@@ -97,6 +130,8 @@
     <tr>
       <td>
         <strong>Major Under Performer:</strong>
+      </td>
+      <td>
         <% if @event_registrant.MajorUnderPerformer %>
             Yes
         <% else %>
@@ -108,6 +143,8 @@
     <tr>
       <td>
         <strong>Under Performing By Amount:</strong>
+      </td>
+      <td>
         <%= @event_registrant.MajorUnderPerformingByAmount %>
       </td>
     </tr>
@@ -115,6 +152,8 @@
     <tr>
       <td>
         <strong>Annual Donor With 1m Min Assets:</strong>
+      </td>
+      <td>
         <% if @event_registrant.AnnualDonorWith1MMinAssets %>
             Yes
         <% else %>
@@ -126,6 +165,8 @@
     <tr>
       <td>
         <strong>Annual Under Performer:</strong>
+      </td>
+      <td>
         <% if @event_registrant.AnnualUnderPerformer %>
             Yes
         <% else %>
@@ -137,6 +178,8 @@
     <tr>
       <td>
         <strong>Annual Under Performing By Amount:</strong>
+      </td>
+      <td>
         <%= @event_registrant.AnnualUnderPerformingByAmount %>
       </td>
     </tr>
